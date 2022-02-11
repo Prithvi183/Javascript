@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript | Strings and String Methods</title>
 </head>
 <body>
-    
+    <div class="contianer">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h3 id="content"></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut consequatur minus corrupti ab officiis odio aperiam facere rerum aut ullam, ipsum id ea vitae pariatur excepturi minima provident officia sunt aliquam cumque incidunt? Architecto ipsum, consequuntur neque dolore, facilis doloribus deserunt odio tempore expedita molestias in animi sunt illum necessitatibus veniam voluptatibus rem nobis officia repellendus. Similique necessitatibus quibusdam aliquid ratione! Facere distinctio ab aperiam, ad provident blanditiis eos tempora possimus amet, exercitationem est! Consectetur sunt fugiat omnis qui. Nesciunt, molestiae, non fugiat vero dolore voluptatibus ut sunt maiores ducimus quisquam facilis corrupti debitis reprehenderit hic eveniet consequatur? Fugit.</p>
+    </div>
+
+    <script>
+        var string = "This";
+        var str = "This is a 'Mobile'.";
+        var name = "Prithvi";
+        var skill = "Web Developer";
+        var message = " is a good boy.";
+        var len = name.length;
+        var temp = `${name} is the best ${skill} in our class.`
+        console.log(string);
+        console.log(str);
+        console.log(name + message);
+        console.log(temp);
+        console.log(`Length of the name is ${len}.`);
+
+        //Another way to create a string is 
+        var a = new String("Prithvi");
+        console.log(a); 
+
+        document.getElementById('content').innerHTML = '<h3> This is a h3 Heading. </h3>';
+
+    </script>
 </body>
 </html>
