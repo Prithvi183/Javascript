@@ -11,6 +11,47 @@
     <script>
         var str = "This is a string.";
         console.log(str);
+        
+        // First occurance of substring
+        var position = str.indexOf('is');
+        console.log(position)
+        
+        // Last occurance of substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        var Substr = str.slice(4,10); //Can give negavtive values.
+        var Substr = str.substring(4,10); //Cannot give negative values.
+        var substr = str.substr(1,10); // It take from index and length uptill to print.
+        console.log(Substr);
+        console.log(substr);
+
+        // Replacing a string
+        var replaced = str.replace('string', 'Prithvi');
+        console.log(replaced);
+
+        //Converting strings into Lower and Uppercase.
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        // Concatenating strings.
+        var newString = str.concat(' concatenating with a New string.');
+        console.log(newString);
+        
+        // trimming a string
+        var strWithWhitespaces = ('    This contains      Whitespaces.       ')
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+
+        //Extracting a char from a string.
+        var char = str.charAt(2);
+        var char = str.charCodeAt(2);
+        console.log(char);
+
+        // Slicing using array
+        console.log(str[3]);
+
     </script>
 </body>
 </html>
