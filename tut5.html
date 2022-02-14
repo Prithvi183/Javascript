@@ -23,6 +23,52 @@
         var string1 = "This is a string.";
         var string1 = "This is a string2.";
         console.log(string1);
+
+        let a = 'Prithviraj';
+        {
+            let a = 'Prithvi';
+            console.log(a)
+        }
+        console.log(a);
+
+        {
+        const a = "This cannot be changed.";
+        // a = "I want to change this."    //This will throw an error coz const cannot be change, once declared.
+        console.log(a);
+        }
+
+        // If else statements.
+        let age = 35;
+        if (age > 18) {
+            console.log("You can drink.");
+        }
+        else{
+            console.log("You cannot drink.");
+            }
+
+        const cups = 45;
+        switch (cups) {
+            case 41:
+                console.log("The value of cups is 41.");
+                break;
+            case 42:
+                console.log("The value of cups is 42.");
+                break;
+            case 43:
+                console.log("The value of cups is 43.");
+                break;
+            case 44:
+                console.log("The value of cups is 44.");
+                break;
+            case 45:
+                console.log("The value of cups is 45.");
+                break;
+        
+            default:
+                console.log("The value is invalid.");
+                break;
+        }
+
     </script>
 
 </body>
