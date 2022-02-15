@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript: Arrays and Objects</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">Simple si HTML</div>
     <script>
-        let myVar1 = 45;
-        let myVar2 = "string";
-        let myVar3 = true;
-        let myVar4 = null;
-        let myVar5 = undefined;
+      let myVar1 = 45;
+      let myVar2 = "string";
+      let myVar3 = true;
+      let myVar4 = null;
+      let myVar5 = undefined;
 
-        let employee = {
-            name: "Prithviraj",
-            salary: 1000,
-            channel1: "To be created",
-            channel2: "To be created",
-        }
-        console.log(employee)
+      let employee = {
+        name: "Prithviraj",
+        salary: 1000,
+        channel1: "To be created",
+        "channel 2": "To be created",
+      };
+      console.log(employee);
+      console.log(employee.channel1);
+      console.log(employee["channel1"]);
+      // console.log(employee.channel 2);  //This will throw error bcoz there is a space btw 'l' and '2'.
+      console.log(employee["channel 2"]);
 
-        // let name = [1, 2, 3, 'harry', undefined];    
-        let name = new Array(1, 2, 3, 'harry', undefined);
-        console.log(name);
-        // console.log(name[0]);
-        // console.log(name[1]);
-        // console.log(name[2]);
-        // console.log(name[3]);
+      // let name = [1, 2, 3, 'harry', undefined];
+      // let name = new Array(51, 4, 0.3, 'harry', undefined);
+      let name = new Array(23);
+      console.log(name);
+
+      console.log(name.length);
+      name = name.sort();
+      console.log(name.push("Prithvi"));
+      console.log(name);
     </script>
-</body>
+  </body>
 </html>
