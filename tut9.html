@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops.
+    </div>
+
+    <script>
+        console.log('This is our tut-9.');
+        
+        for(let i = 0; i<5; i++){
+            console.log(i);
+        }
+
+        let friends = ['Rahul', 'Shivam', 'Yugs', 'Sharu', 'Saku'];
+        
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Hello Friend, " + friends[index]);    
+        // }
+
+        friends.forEach(function f(element){
+            console.log("Hello Friend, " + element + " to modern Javascript.");
+        })
+        
+        for(element of friends)
+        {
+            console.log("Hello Friend, " + element + " to modern Javascript Again!!.");
+        }
+
+        let employee = {
+            name: 'Prithvi',
+            salary: 100,
+            channel: 'NAN'
+        }
+
+        for(key in employee){
+            console.log(`The ${key} of the employee is ${employee[key]}.`);
+        }
+
+        // while loop in Js
+        let i = 0;
+        while (i < 5)
+        {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+        
+        // Do-while loop in Js
+        let j = 0;
+        do{
+            console.log(`${j} is less than 10`);
+            j++;
+        }
+        while (j < 10);
+
+    </script>
+
+</body>
+</html>
