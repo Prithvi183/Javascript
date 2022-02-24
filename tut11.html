@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Js Events</title>
+    <style>
+        #btn{
+            padding: 5px 10px;
+            background-color:rgb(25, 144, 241);
+            border: 1px solid rgb(7, 84, 156);
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    </style>
 </head>
 <body>
+    <!-- Browser Events: -->
+    <!-- Click
+    Contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    Submit
+    focus
+
+    DOMcontentloaded
+
+    transitionend --> 
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque explicabo necessitatibus perspiciatis! Omnis quaerat blanditiis explicabo rerum excepturi nihil molestias error dolorum, accusantium ducimus, ex recusandae iusto officia eos dicta expedita voluptatem quasi harum asperiores, doloribus debitis laborum odit. Animi harum quasi eligendi deserunt maxime voluptatum impedit earum minima iusto sint doloremque distinctio consectetur dolores recusandae ex, eius, ullam ab nesciunt. Tempore praesentium reprehenderit atque corporis accusantium alias consectetur sit consequuntur omnis hic asperiores nostrum, quaerat neque voluptatem sunt totam a? Quod adipisci, dolores eos porro, beatae atque voluptatem, dolorum perspiciatis officia nulla voluptate nesciunt? Dolorum soluta repudiandae vero commodi. Pariatur qui optio doloribus exercitationem harum deleniti nihil rem cumque repellat veniam quas distinctio laboriosam minus sapiente laudantium, vero explicabo reprehenderit consectetur eum maxime reiciendis! Nostrum harum voluptatem voluptates consequatur, suscipit et ea aut magnam modi explicabo quo esse rerum soluta neque reiciendis maiores accusantium libero similique necessitatibus? Quasi tempore ad modi doloremque quidem corrupti nisi quaerat soluta sint mollitia. Consequuntur accusamus amet quibusdam ullam, ea quae, blanditiis laudantium voluptate eligendi, excepturi cum minus. Eaque est minima error, deleniti nam eius et laudantium consequuntur ipsam tempore beatae, repudiandae iste sit. Alias consequuntur eligendi iure eum esse necessitatibus odit voluptate sit aspernatur, harum ex? Ipsa eum dolores iusto quisquam fugiat aliquid dolor nam incidunt, veritatis dolorum qui repellendus consectetur sequi quos, neque fuga quidem! Dignissimos placeat architecto quae maxime sed ipsum velit commodi.</p>
+    </div>
     
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside');
+        })
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse Outside');
+        })
+
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>
